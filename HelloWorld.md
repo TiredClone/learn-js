@@ -1,6 +1,7 @@
 ## Тег <script>
 
 Программы на JavaScript могут быть вставлены в любое место HTML-документа с помощью тега <script>
+```HTML
     <!DOCTYPE HTML>
     <html>
     <body>
@@ -11,12 +12,12 @@
     <p>После скрипта</p>
     </body>
     </html>
-
+```
 
 ## Внешние скрипты
 
 Файлы скрипта можно подключить к HTML с помощью атрибута "src":
-<script src="/path/to/script.js"></script> - абсолютный путь до файла
+```JavaScript <script src="/path/to/script.js"></script>``` - абсолютный путь до файла
 Так же можно указать относительный путь от текущей страницы.
 Например, src="script.js" или src="./script.js" будет означать, что файл "script.js" находится в текущей папке. 
 
@@ -24,4 +25,6 @@
 
 Eсли атрибут src установлен, содержимое тега <script> будет игнорироваться.
 
-Задания в файлах Hello World.html и Hello World.js
+Задания в файлах [Hello World.html][1] и [Hello World.js][2]
+[1]: ./HelloWorld.html
+[1]: ./HelloWorld.js
