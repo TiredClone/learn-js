@@ -4,62 +4,64 @@
 
 Приведённая ниже инструкция создаёт(объявляет) переменную с именем `message`:
 
-```JavaScript
-    let message;
+```js
+let message;
 ```
 
 Теперь можно поместить в неё данные(определить переменную), используя оператор приваивания `=`:
 
-```JavaScript
-    let message = 'Hello';
+```js
+let message = "Hello";
 ```
 
 Строка сохраняется в области памяти, связанной с переменной. Мы можем получить к ней доступ, используя имя переменной:
 
-```JavaScript
-    let message
-    message = 'Hello';
-    alert(message)
+```js
+let message;
+message = "Hello";
+alert(message);
 ```
 
-```JavaScript
-    let message = 'Hello';
-    alert(message)
+```js
+let message = "Hello";
+alert(message);
 ```
 
 Так же мы можем объявить несколько переменных в одной строке:
 
-```JavaScript
-    let user = 'John', age = 25, message = 'Hello';
+```js
+let user = "John",
+  age = 25,
+  message = "Hello";
 ```
 
 Способ рабочий, но не рекомендованный. Для лучшей читаемости объявите каждую переменную на новой строке.
 
-```JavaScript
-    let user = 'John';
-    let age = 25;
-    let message = 'Hello';
+```js
+let user = "John";
+let age = 25;
+let message = "Hello";
 ```
 
 ## `var` вместо `let`
 
-```JavaScript
-var message = 'Hello';
+```js
+var message = "Hello";
 ```
 
 Ключевое слово `var` - почти то же самое, что и `let`. Он объявляет переменную, но немного по-другому, "устаревшим" способом.
 
 Мы можем объявить две переменные и скопировать данные из одной в другую.
 
-```JavaScript
-    let hello = 'Hello world!'
+```js
+let hello = "Hello world!";
 
-    let message;
+let message;
 
-    message = hello;
+message = hello;
 
-    alert(hello)
-    alert(message)
+alert(hello);
+alert(message);
 ```
 
 ## Имена перемнных
@@ -71,9 +73,9 @@ var message = 'Hello';
 
 Примеры допустимых имён:
 
-```JavaScript
-    let userName;
-    let test123;
+```js
+let userName;
+let test123;
 ```
 
 Если имя содержит несколько слов, обычно используется верблюжья нотация - `myVeryLongName`. Каждое слово начинается с заглавной буквы. CamelCase
@@ -87,8 +89,8 @@ var message = 'Hello';
 
 Использовать `const`. Такие переменные нельзя изменить.
 
-```JavaScript
-    const myBirthday = '18.04.1982';
+```js
+const myBirthday = "18.04.1982";
 ```
 
 Название "константа" означает, что значение переменной никогда не меняется. Но есть константы, которые известны до выполнения(шестнадцатеричное значение для красного цвета), а есть константы, которые вычисляются во время выполнения сценария, но не изменяются после из первоначального назначения.
