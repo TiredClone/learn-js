@@ -49,3 +49,5 @@ let isBoss = confirm("Ты здесь главный?");
 
 alert(isBoss); //true, tckb нажата ОК
 ```
+
+Задания в файлах [AlertPromptConfirm.html](AlertPromptConfirm.html) и [AlertPromptConfirm.js](AlertPromptConfirm.js)

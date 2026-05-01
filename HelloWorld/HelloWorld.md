@@ -26,4 +26,4 @@
 
 Eсли атрибут src установлен, содержимое тега `<script>` будет игнорироваться.
 
-Задания в файлах [Hello World.html](HelloWorld.html) и [Hello World.js](HelloWorld.js)
+Задания в файлах [HelloWorld.html](HelloWorld.html) и [HelloWorld.js](HelloWorld.js)
