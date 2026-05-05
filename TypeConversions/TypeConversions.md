@@ -52,7 +52,7 @@ alert(age); // NaN, преобразование не удалось
 
 ```js
 alert(Number("  123  ")); // 123
-alert(Number("123z")); // NaN(ошибка чтения числа на месте символа "z")
+alert(Number("123z")); // NaN (ошибка чтения числа на месте символа "z")
 alert(Number(true)); // 1 
 alert(Number(false)) // 0
 ```
@@ -81,5 +81,5 @@ alert(Boolean("")); // false
 > Некоторые языки(к примеру, PHP) воспринимают строку `"0"` как `false`. Но в JavaScript, если строка не пустая, то она всегда `true`.
 > ```js
 > alert(Boolean("0")); // true
-> alert(Boolean(" ")); // пробел тоже true(любая непустая строка даёт true)
+> alert(Boolean(" ")); // пробел тоже true (любая непустая строка даёт true)
 > ```
