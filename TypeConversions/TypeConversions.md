@@ -45,20 +45,20 @@ alert(typeof num); // number
 
 ```js
 let age = Number('Любая строка вместо числа')
-alert(age); // Nan, преобразование не удалось
+alert(age); // NaN, преобразование не удалось
 ```
 
 Правила численного преобразования:
 
 ```js
 alert(Number("  123  ")); // 123
-alert(Number("123z")); //Nan(ошибка чтения числа на месте символа "z")
+alert(Number("123z")); // NaN(ошибка чтения числа на месте символа "z")
 alert(Number(true)); // 1 
 alert(Number(false)) // 0
 ```
 
-null - 0
-undefined - Nan
+- `null` - `0`
+- `undefined` - `NaN`
 
 ## Логическое преобразование
 
@@ -66,7 +66,7 @@ undefined - Nan
 
 Правило преобразования:
 
-* Значения, которое интуитивно "пустые", вроде `0`, пустой строки, `null`, `undefined` и `Nan`, становятся `false`
+* Значения, которое интуитивно "пустые", вроде `0`, пустой строки, `null`, `undefined` и `NaN`, становятся `false`
 * Все остальные значения становятся `true`
 
 ```js
@@ -74,9 +74,12 @@ alert(Boolean(1)); // true
 alert(Boolean(0)); // false
 
 alert(Boolean("Привет!")); // true
-alert(Boolean("")); //false
+alert(Boolean("")); // false
 ```
 
 > [!NOTE]
 > Некоторые языки(к примеру, PHP) воспринимают строку `"0"` как `false`. Но в JavaScript, если строка не пустая, то она всегда `true`.
-> ```js alert(Boolean("0")); // true alert(Boolean(" ")); // пробел тоже true(любая непустая строка даёт true)```
+> ```js
+> alert(Boolean("0")); // true
+> alert(Boolean(" ")); // пробел тоже true(любая непустая строка даёт true)
+> ```
